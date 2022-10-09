@@ -1,0 +1,131 @@
+{
+  "cats-breeds": [
+    "Burmese",
+    "Balinese",
+    "Siamese",
+    "Snowshoe",
+    "Siberian"
+  ],
+  "cats": [
+    {
+      "id": "1",
+      "name": "Daisy",
+      "age": "3",
+      "breed": "Burmese"
+    },
+    {
+      "id": "2",
+      "name": "Gracie",
+      "age": "2",
+      "breed": "Balinese"
+    },
+    {
+      "id": "3",
+      "name": "Rosie",
+      "age": "7",
+      "breed": "Balinese"
+    },
+    {
+      "id": "4",
+      "name": "Kiki",
+      "age": "2",
+      "breed": "Siamese"
+    },
+    {
+      "id": "5",
+      "name": "Pumpkin",
+      "age": "13",
+      "breed": "Snowshoe"
+    },
+    {
+      "id": "6",
+      "name": "Mocha",
+      "age": "11",
+      "breed": "Snowshoe"
+    },
+    {
+      "id": "7",
+      "name": "Mittens",
+      "age": "9",
+      "breed": "Balinese"
+    },
+    {
+      "id": "8",
+      "name": "Boo",
+      "age": "6",
+      "breed": "Siberian"
+    },
+    {
+      "id": "9",
+      "name": "Momo",
+      "age": "4",
+      "breed": "Siamese"
+    },
+    {
+      "id": "10",
+      "name": "Gizmo",
+      "age": "1",
+      "breed": "Balinese"
+    },
+    {
+      "id": "11",
+      "name": "Boots",
+      "age": "5",
+      "breed": "Snowshoe"
+    },
+    {
+      "id": "12",
+      "name": "Goose",
+      "age": "6",
+      "breed": "Siamese"
+    },
+    {
+      "id": "13",
+      "name": "Remi",
+      "age": "10",
+      "breed": "Siberian"
+    },
+    {
+      "id": "14",
+      "name": "Sunny",
+      "age": "15",
+      "breed": "Siberian"
+    },
+    {
+      "id": "15",
+      "name": "Croqueta",
+      "age": "12",
+      "breed": "Snowshoe"
+    },
+    {
+      "id": "16",
+      "name": "Nugget",
+      "age": "13",
+      "breed": "Siberian"
+    },
+    {
+      "id": "17",
+      "name": "Tiptoe",
+      "age": "4",
+      "breed": "Snowshoe"
+    },
+    {
+      "id": "18",
+      "name": "Cheeto",
+      "age": "1",
+      "breed": "Burmese"
+    },
+    {
+      "id": "19",
+      "name": "Blue",
+      "age": "2",
+      "breed": "Siamese"
+    },
+    {
+      "id": 20,
+      "name": "Peaches",
+      "age": "14",
+      "breed": "Burmese"
+    }
+  ]
+}
