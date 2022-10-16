@@ -1,5 +1,6 @@
 import { deleteCatById } from '../services/deleteCatById.js'
 import { getAllCats } from '../services/getAllCats.js'
+import { updateCatMode } from './updateCatMode.js'
 
 /**
  * Append a table element with all cats in element.
@@ -56,8 +57,10 @@ function appendCatsToTable(table, cats) {
     tr.appendChild(breed)
 
     const actions = document.createElement('td')
+    actions.classList.add('flex')
+
     const deleteBtn = document.createElement('button')
-    deleteBtn.textContent = 'Borrar'
+    deleteBtn.textContent = '❌ Borrar'
     deleteBtn.addEventListener('click', async e => {
       await deleteCatById(cat.id)
       const target = document.getElementById('target')
@@ -65,6 +68,14 @@ function appendCatsToTable(table, cats) {
       catsTable(target, cats)
     })
     actions.appendChild(deleteBtn)
+
+    const updateBtn = document.createElement('button')
+    updateBtn.textContent = '✏️ Actualizar'
+    updateBtn.addEventListener('click', e => {
+      updateCatMode(cat)
+    })
+    actions.appendChild(updateBtn)
+
     tr.appendChild(actions)
 
     fragment.appendChild(tr)
