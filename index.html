@@ -11,12 +11,30 @@
 <body>
   <div style="max-width: 60vw; margin: auto;">
     <h1>CRUD gatos</h1>
+
+    <p>
+      <a href="#add-cat">Añadir gato</a>
+    </p>
+
     <form id="search">
       <input type="search" name="search-input" id="search-input">
       <button>Buscar</button>
     </form>
   
     <div id="target"></div>
+
+    <form id="add-cat">
+      <label for="name">Nombre</label>
+      <input type="text" name="name" id="name">
+
+      <label for="age">Edad</label>
+      <input type="number" name="age" id="age" min="0">
+
+      <label for="breed">Raza</label>
+      <select name="breed" id="breed"></select>
+      
+      <button>Añadir gato</button>
+    </form>
   </div>
 
 </body>
