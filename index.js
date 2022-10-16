@@ -37,6 +37,8 @@ addCatForm.addEventListener('submit', async e => {
     addCatForm.reset()
 
     catsTable(target, cats)
+  } else {
+    window.alert('Algo ha ido mal. Revise los campos del formulario')
   }
 })
 
