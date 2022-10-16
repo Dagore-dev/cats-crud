@@ -1,8 +1,16 @@
+import { deleteCatById } from '../services/deleteCatById.js'
+import { getAllCats } from '../services/getAllCats.js'
+
 /**
  * Append a table element with all cats in element.
  * @param { HTMLElement } element 
  */
 function catsTable(element, cats) {
+  if (element.hasChildNodes()) {
+    const child = element.firstChild
+    element.removeChild(child)
+  }
+
   const table = document.createElement('table')
 
   appendTableHeaders(table)
@@ -12,7 +20,7 @@ function catsTable(element, cats) {
 }
 
 function appendTableHeaders(table) {
-  const columns = ['id', 'Nombre', 'Edad', 'Raza']
+  const columns = ['id', 'Nombre', 'Edad', 'Raza', 'Acciones']
   const tr = document.createElement('tr')
 
   for (const column of columns) {
@@ -46,6 +54,18 @@ function appendCatsToTable(table, cats) {
     const breed = document.createElement('td')
     breed.textContent = cat.breed
     tr.appendChild(breed)
+
+    const actions = document.createElement('td')
+    const deleteBtn = document.createElement('button')
+    deleteBtn.textContent = 'Borrar'
+    deleteBtn.addEventListener('click', async e => {
+      await deleteCatById(cat.id)
+      const target = document.getElementById('target')
+      const cats = await getAllCats()
+      catsTable(target, cats)
+    })
+    actions.appendChild(deleteBtn)
+    tr.appendChild(actions)
 
     fragment.appendChild(tr)
   }
